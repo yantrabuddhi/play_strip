@@ -4,6 +4,8 @@
 #include <txtprocess.h>
 #include <txtformlines.h>
 #include <tbrackets.h>
+#include <tcaps.h>
+#include <tspacedot.h>
 #include <QMap>
 #include <QList>
 #include <iostream>
@@ -14,6 +16,8 @@ int main(int argc, char *argv[])
     QMap<QString,TxtProcess*> map;
     map["rel"]=new TxtFormLines();
     map["brak"]=new tBrackets();
+    map["caps"]=new tCaps();
+    map["dotspc"]=new tSpaceDot();
     //if argv < 2 display help
     if (argc<3){
         //help;

@@ -18,9 +18,13 @@ TEMPLATE = app
 SOURCES += main.cpp \
     txtprocess.cpp \
     txtformlines.cpp \
-    tbrackets.cpp
+    tbrackets.cpp \
+    tcaps.cpp \
+    tspacedot.cpp
 
 HEADERS += \
     txtprocess.h \
     txtformlines.h \
-    tbrackets.h
+    tbrackets.h \
+    tcaps.h \
+    tspacedot.h
