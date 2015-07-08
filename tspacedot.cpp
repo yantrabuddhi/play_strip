@@ -20,6 +20,7 @@ QString tSpaceDot::process(QString input)
     o1=o1.replace(QRegExp("\\.+\\s"),"\n");
     o1=o1.replace(QRegExp("\\.\\.\\.+"),"\n");
     o1=o1.replace(QRegExp("\\.\\.")," ");
+    o1=o1.replace(QRegExp("(\\.|:)"),"");
     //o1=o1.replace(QRegExp("\\.\\w")," ");
     return o1;
 }

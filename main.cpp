@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
     if (argc<3){
         //help;
         std::cout<<"\nUsage: play_strip hello.txt <p1> <p2> .. <pn>\n";
+        std::cout<<"Example: ./play_strip pre-processed.txt rel brak caps dotspc\n";
         QList<QString> keys=map.keys();
         foreach(QString s,keys){
             std::cout<<s.toStdString()<<", ";
